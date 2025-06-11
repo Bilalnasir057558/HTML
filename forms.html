@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!-- action -> where the data is sent after submission-->
+    <form action="/contact_me">
+        
+        <label for="email_number">UserName: </label>
+
+        <!--id -> used to link label to input field
+            name -> sent as key to server to identify specific data
+            value -> default value 
+            placeholder -> hint inside field
+            required -> field must be filled before submitting-->
+
+        <input type="text" id="email_number" name="username" value="John" placeholder="email or number" required> <br>
+
+        <label for="user_password">Password: </label>
+        <input type="password" id="user_password" name="user_pass" required> <br>
+        
+        Date: <input type="date"> <br>
+        File: <input type="file"> <br>
+        Color: <input type="color"> <br>
+        Salary range: <input type="range"> <br>
+
+        <label for="male">Male: </label>
+        <input type="radio" id="male" name="gender" value="male"> <br>
+        <label for="female">Female: </label>
+        <input type="radio" id="female" name="gender" value="female"> <br>
+        
+        <hr>
+
+        <label for="Cpp">C++: </label>
+        <input type="checkbox" id="Cpp" name="lang" value="cplusplus"> <br>
+        <label for="python">Python: </label>
+        <input type="checkbox" id="python" name="lang" value="python"> <br>
+        <label for="csharp">C#: </label>
+        <input type="checkbox" id="csharp" name="lang" value="Csharp"> <br>
+        <hr>
+
+        <label for="country">Select Country: </label>
+        <select name="country" id="country">
+            <option value="Pakistan">Pakistan</option>
+            <option value="US">US</option>
+            <option value="UK">UK</option>
+            <option value="Others">Others</option>
+        </select> <br>
+
+        <textarea name="desc" id="desc" rows="5" cols="50">Enter Job Description</textarea> <br>
+
+        Button: <input type="button" value="Click Me"> <br>
+        Submit: <input type="submit">
+    </form>
+</body>
+</html>
